@@ -16,12 +16,12 @@
 
   /* HEADER */
   header {
-    height: 40vh;
+    height: 30vh;
     border-bottom: 5px solid #eee;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.5;
     width: 90%;
     top: 42%;
@@ -49,23 +49,22 @@
 
   /* MAIN */
   main {
-    height: 56vh;
-    flex-direction: column;
+    height: 40vh;
+    /* flex-direction: column; */
     justify-content: center;
-    gap: 4rem;
-    padding: 3rem 1.5rem;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
   }
 
   .left {
-    width: 100%;
+    width: 50%;
   }
 
   .right {
-    width: 100%;
-    font-size: 1.5rem;
+    width: 50%;
+    font-size: 1.8rem;
     text-align: center;
   }
-
 
   /* INPUT */
   .guess {
@@ -74,7 +73,6 @@
     padding: 1.5rem 1rem;
     margin: 2rem 2rem;
   }
-
 
   /* BUTTONS */
   .btn {
