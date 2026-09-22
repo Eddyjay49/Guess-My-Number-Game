@@ -9,8 +9,8 @@
   }
 
   .container-div {
-    min-height: 96vh;
-    border: 2px solid #eee;
+    min-height: 60vh;
+    /* border: 2px solid #eee; */
     border-radius: 12px;
   }
 
