@@ -21,6 +21,7 @@ body {
 
 .container-div{
   border-radius:15px ;
+  border: 5px solid #eee;
 }
 
 /* LAYOUT */
@@ -36,7 +37,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 5px solid #eee;
+  /* border-bottom: 5px solid #eee; */
 }
 
 .left {
