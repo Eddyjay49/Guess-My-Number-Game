@@ -1,0 +1,101 @@
+@media (max-width: 600px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    padding: 1rem;
+  }
+
+  .container-div {
+    min-height: 96vh;
+    border: 2px solid #eee;
+    border-radius: 12px;
+  }
+
+  /* HEADER */
+  header {
+    height: 40vh;
+    border-bottom: 5px solid #eee;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+    width: 90%;
+    top: 42%;
+  }
+
+  .between {
+    font-size: 1rem;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .again {
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: 1.2rem 1.5rem;
+  }
+
+  .number {
+    width: 12rem;
+    max-width: 12rem;
+    padding: 1.5rem 0;
+    font-size: 4rem;
+  }
+
+
+  /* MAIN */
+  main {
+    height: 56vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    padding: 3rem 1.5rem;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+
+  /* INPUT */
+  .guess {
+    width: 16rem;
+    font-size: 3.5rem;
+    padding: 1.5rem 1rem;
+    margin: 2rem 2rem;
+  }
+
+
+  /* BUTTONS */
+  .btn {
+    font-size: 1.3rem;
+    padding: 1.5rem 3rem;
+  }
+
+
+  /* GAME MESSAGE */
+  .message {
+    margin-bottom: 2rem;
+    height: auto;
+    line-height: 1.7;
+  }
+
+  .label-score,
+  .label-highscore {
+    line-height: 1.0;
+  }
+
+  .label-score {
+    margin-bottom: 1.5rem;
+  }
+}
