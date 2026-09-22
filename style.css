@@ -12,11 +12,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   font-family: 'Exo 2', sans-serif;
   color: #eee;
   background-color:#0B132B ;
@@ -25,7 +20,7 @@ body {
 }
 
 .container-div{
-  border: 3px solid #ffff;
+  /* border: 3px solid #ffff; */
   border-radius:15px ;
 }
 
@@ -37,11 +32,12 @@ header {
 }
 
 main {
-  height: 65vh;
+  height: 60vh;
   color: #eee;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 7px solid #eee;
 }
 
 .left {
