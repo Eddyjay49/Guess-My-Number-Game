@@ -49,7 +49,7 @@
 
   /* MAIN */
   main {
-    height: 40vh;
+    height: 30vh;
     /* flex-direction: column; */
     justify-content: center;
     gap: 2rem;

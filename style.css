@@ -12,6 +12,11 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   font-family: 'Exo 2', sans-serif;
   color: #eee;
   background-color:#0B132B ;
