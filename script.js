@@ -1,11 +1,12 @@
 
+
 // VARIABLES
 const body = document.querySelector('body');
 const checkValue = document.querySelector('.check');
 const number = document.querySelector('.number');
 const myScore = document.querySelector(".myScore");
 const guess = document.querySelector('.guess');
-const gameMessage = document.querySelector('.message')
+const gameMessage = document.querySelector('.message');
 let Again = document.querySelector('.again');
 let myHighScore = document.querySelector('.myHighscore');
 let secreatNumber = Math.trunc(Math.random() * 20) + 1;
@@ -21,28 +22,26 @@ const displayMessage = function (message) {
   gameMessage.textContent = message;
 }
 
+
 // function for the game to start which will be passed to the click event that will trigger "checkValue button"
 const startGame = function () {
-    
+    // assigning the value of guess to "guessNo"
     const guessNo = Number(guess.value);
     console.log(typeof guessNo, guessNo)
 
     // When there is no number or value in the imput
     if (!guessNo) {
-        // document.querySelector(".message").textContent = 'There Is No Number';
         displayMessage('There is no Number😫')
-
         // When a player wins the game
+
     } else if (guessNo === secreatNumber) {
-        // document.querySelector(".message").textContent = 'Correct Number';
         displayMessage('Correct Number😊')
-
-        // document.querySelector('.number').textContent = secreatNumber;
-        number.textContent = secreatNumber;
-
         // DOM manipulation with CSS
+        number.textContent = secreatNumber;
         body.style.backgroundColor = '#60b347';
         number.style.width = '30rem'
+
+        // if score is greater than highscore
         if (score > highScore) {
             highScore = score;
             myHighScore.textContent = highScore;
@@ -51,13 +50,11 @@ const startGame = function () {
         //HERE WE DEFACTOED AND COMBINED THE CONDITIONS FOR IF guessNO < secretNumber/guessNO > secretNumber
     } else if (guessNo !== secreatNumber) {
         if (score > 1) {
-            // document.querySelector(".message").textContent = guessNo < secreatNumber ? 'Number is too low' : 'Number is too high';
             displayMessage(guessNo < secreatNumber ? 'Number is too low😌' : 'Number is too high😌');
             score--
             myScore.textContent = score;
         } else {
-            // document.querySelector(".message").textContent = 'You lost the game';
-            displayMessage('You lost the game')
+            displayMessage('You lost the game😪')
             myScore.textContent = 0;
         }
     }
