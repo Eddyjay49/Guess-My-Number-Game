@@ -28,7 +28,7 @@ body {
 header {
   position: relative;
   height: 35vh;
-  border-bottom: 7px solid #eee;
+  border: 5px solid #eee;
 }
 
 main {
@@ -37,7 +37,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border-bottom: 5px solid #eee; */
+  border-bottom: 5px solid #eee;
 }
 
 .left {
